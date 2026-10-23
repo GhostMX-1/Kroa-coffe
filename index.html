@@ -23,7 +23,6 @@
             box-sizing: border-box;
         }
 
-        /* ESTO HACE EL DESPLAZAMIENTO SUAVE EN TODO EL NAVEGADOR */
         html {
             scroll-behavior: smooth;
         }
@@ -272,17 +271,27 @@
             transform: scale(1.1);
         }
 
-        /* Responsive para celulares */
+        /* Responsive para celulares ajustado para mostrar el menú */
         @media (max-width: 768px) {
+            header {
+                padding: 1rem 3%;
+            }
+            .logo {
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+            }
+            nav ul {
+                gap: 0.8rem; /* Espacio más compacto para que quepan */
+            }
+            nav ul li a {
+                font-size: 0.8rem; /* Letra un poco más pequeña en móviles */
+            }
             .about {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
             .hero h1 {
                 font-size: 2.5rem;
-            }
-            nav ul {
-                display: none;
             }
             .whatsapp-float {
                 bottom: 20px;
@@ -404,7 +413,7 @@
             </div>
             <div class="contact-box">
                 <h3>Ubicación</h3>
-                <p>Av. Kroa Coffee #123, Colonia Centro</p>
+                <p>Av. Central #123, Colonia Centro</p>
             </div>
             <div class="contact-box">
                 <h3>Contacto</h3>
@@ -416,7 +425,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Kroa Coffee. Diseñado para ti.</p>
+        <p>&copy; 2026 Kroa Coffee. Diseñado con estilo minimalista.</p>
     </footer>
 
     <!-- Botón Flotante de WhatsApp -->
